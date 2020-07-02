@@ -39,11 +39,14 @@
 <div class="post-wrapper">
     <article class="post article-entry">
     <div class="post-title">
-        test
+        Regex Golf
     </div>
     <p class="sub">Jul 02 2020</p>
     <div class="post-content">
-        <p>你说个der</p>
+        <p>Regex Golf是个锻炼写正则能力的网站，目前看起来题目数量是无穷的。<br>今天看到一个很好玩的题目，通过正则匹配质数个x的排列。</p>
+<p>接下来解释^(?!(xx+)\1+$)的含义</p>
+<p>^表示字符串开头的位置<br>(?!a)表示当前位置后的字符串不能匹配a<br>xx+表示大于等于两个连续的x<br>?!(xx+)\1+表示（大于等于两个连续的x）连续出现大于等于两次<br>$代表字符串结尾的位置</p>
+<p>听起来有点绕<br>实际上就是质数的概念。质数只有1和自己两个因子，所以一旦?!(xx+)\1+$ 匹配到的x排列都可以被分解成其他因子的乘积，自然不是质数。<br>反正我是写不出来的。<br>谁还不是个fw呢。</p>
 
     </div>
     </article>
