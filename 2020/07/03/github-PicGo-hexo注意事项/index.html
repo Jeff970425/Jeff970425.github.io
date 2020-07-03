@@ -39,24 +39,24 @@
 <div class="post-wrapper">
     <article class="post article-entry">
     <div class="post-title">
-        Regex Golf
+        github + PicGo + hexo注意事项
     </div>
-    <p class="sub">Jul 02 2020</p>
+    <p class="sub">Jul 03 2020</p>
     <div class="post-content">
-        <p>Regex Golf是个锻炼写正则能力的网站 目前看起来题目数量是无穷的</p>
-<p>今天看到一个很好玩的题目 通过正则匹配质数个x的排列</p>
-<p><img src="https://raw.githubusercontent.com/Jeff970425/Picture/master/img/%E7%B4%A0%E6%95%B0%E6%AD%A3%E5%88%99.png" alt=""></p>
-<p>接下来解释^(?!(xx+)\1+$)的含义</p>
-<p>^表示字符串开头的位置</p>
-<p>(?!a)表示当前位置后的字符串不能匹配a</p>
-<p>xx+表示大于等于两个连续的x，记长度为n</p>
-<p>?!(xx+)\1+表示（大于等于两个连续的x）连续出现大于等于两次，记次数为m</p>
-<p>$代表字符串结尾的位置</p>
-<p>听起来有点绕</p>
-<p>实际上就是质数的概念</p>
-<p>质数只有1和自己两个因子 所以(xx+)\1+匹配到的x排列都可以被分解成若干大于1的因子的乘积（n x</p>
-<p>m）再确保从字符串边界开始匹配 那么最终表达式的结果自然不是质数</p>
-<p>反正我是写不出来的 谁还不是个fw呢</p>
+        <p>关于如何用hexo搭建一个blog的教程网上有很多，这里推荐一个：</p>
+<p><strong>小白独立搭建博客–Github Pages和Hexo简明教程</strong></p>
+<p><a href="https://www.douban.com/note/545511422/" target="_blank" rel="noopener">https://www.douban.com/note/545511422/</a></p>
+<p>下面记录我在使用中碰到的几个需要注意的地方：</p>
+<p>1、常用命令</p>
+<p><strong>新建文章</strong> hexo new “postName” </p>
+<p><strong>新建页面</strong> hexo new page “pageName” </p>
+<p><strong>启动服务预览</strong> hexo server </p>
+<p><strong>生成静态页面</strong> hexo generate</p>
+<p><strong>部署</strong> hexo deploy</p>
+<p>2、github无法加载图片的解决方法</p>
+<p>打开 C:\Windows\System32\drivers\etc\hosts</p>
+<p>加上199.232.68.133 raw.githubusercontent.com</p>
+<p>cmd ipconfig /flushdns进行刷新</p>
 
     </div>
     </article>
@@ -86,11 +86,12 @@
 
     <nav class="paginator clearfix">
         
-            <a class="prev" href="/2020/07/03/github-PicGo-hexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
-                <i class="iconfont icon-left"></i>
-                <span class="prev-text">github + PicGo + hexo注意事项</span>
-            </a>
         
+            <a class="next" href="/2020/07/02/%E6%AD%A3%E5%88%99702/">
+                
+                <span class="prev-text">Regex Golf</span>
+                <i class="iconfont icon-right"></i>
+            </a>
         
     </nav>
 
