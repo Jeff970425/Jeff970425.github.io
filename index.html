@@ -50,10 +50,10 @@
 <p>这个想法是非完备的，因为在匹配以下情况时无法得到正确结果：</p>
 <p>1、字符串内无重复字符，但还是非字典序，如 ‘jestword’。</p>
 <p>2、字符串内同一字符连续出现三次及以上，如 ‘abbbc’。</p>
-<p>网上大部分正确答案都是cheat的，比如$^.{5}[^\e]?$$，从长度和末尾非e（屏蔽oriole）入手。</p>
+<p>网上大部分正确答案都是cheat的，比如$\wedge.{5}[\wedge e]?$$，从长度和末尾非e（屏蔽oriole）入手。</p>
 <p>实际上，有更直观简单且完备的解法，来自</p>
 <p><a href="http://m.udpwork.com/item/11365.html" target="_blank" rel="noopener">http://m.udpwork.com/item/11365.html</a></p>
-<p>只需要$^a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*\$$即可。</p>
+<p>只需要$\wedge a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*\$$即可。</p>
 
             </div>
         </article>
